@@ -1,0 +1,27 @@
+# Matlab
+*.asv
+*.m~
+*.fig
+*.mat
+*.slxc
+*.slprj/
+*.autosave
+*.log
+*.tmw
+*.avi
+
+# SolidWorks
+*.SLDPRT
+*.SLDASM
+*.STEP
+
+# Genel
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# VS Code
+.vscode/

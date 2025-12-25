@@ -1,6 +1,6 @@
 
 
-![Robot Simulation Screenshot](Matlab/Screenshot%202025-11-14%20194719.png)
+![Robot Simulation Screenshot](Matlab/Screenshot%202025-12-25%20191614.png)
 
 [📺 Project Introduction Video](https://youtu.be/l-6dr-MfavU)
 
@@ -18,4 +18,4 @@ This project includes torque control and simulation of a 6-degree-of-freedom rob
 2. Open SolidWorks files with SolidWorks or a compatible CAD program.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the GNU GPLv3. See LICENSE for details.

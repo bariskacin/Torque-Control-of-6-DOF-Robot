@@ -1,6 +1,7 @@
 
 
-![Robot Simulation Screenshot](Matlab/Screenshot%202025-12-25%20191614.png)
+![Robot Simulation](Matlab/Screenshot%202025-12-25%20191614.png)
+![Simulink Setup](Matlab/Screenshot%202025-12-26%20185508.png)
 
 [📺 Project Introduction Video](https://youtu.be/l-6dr-MfavU)
 

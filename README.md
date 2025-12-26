@@ -1,6 +1,8 @@
 
-
+## Simulation and Control of 6-DOF Robot Arm
+# Simulation Screenshots
 ![Robot Simulation](Matlab/Screenshot%202025-12-25%20191614.png)
+# Simulink Model
 ![Simulink Setup](Matlab/Screenshot%202025-12-26%20185508.png)
 
 [📺 Project Introduction Video](https://youtu.be/l-6dr-MfavU)

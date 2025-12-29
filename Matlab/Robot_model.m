@@ -48,7 +48,7 @@ tool = rigidBody('tool');
 fixJ = rigidBodyJoint('fixTool','fixed');
 
 rpy = deg2rad(tool_rpy_deg);
-Rtool = eul2rotm([rpy(3) rpy(2) rpy(1)], 'ZYX');  % yaw,pitch,roll
+Rtool = eul2rotm([rpy(3) rpy(2) rpy(1)], 'ZYX');  
 Ttool = rotm2tform(Rtool) * trvec2tform(tool_offset_m);
 
 setFixedTransform(fixJ, Ttool);

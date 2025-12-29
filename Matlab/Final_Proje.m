@@ -14,7 +14,7 @@ p3 = [ 0.25;  -0.39; 0.35];
 p4 = [ 0.3;  -0.45; 0.13];   
 p5 = [ 0.2;  -0.57; 0.03];   
 p6 = p1;   
-p7 = [ 2.0;   2.0;  2.0];
+p7 = [ 1.5;   1.5;  1.5];
 
 T_cart = cell(1,7);
 P = {p1,p2,p3,p4,p5,p6,p7};
@@ -82,8 +82,12 @@ end
 N = size(q_traj,2);
 t = (0:N-1) * dt;  
 
-q1_traj = q_traj(1,:); q2_traj = q_traj(2,:); q3_traj = q_traj(3,:);
-q4_traj = q_traj(4,:); q5_traj = q_traj(5,:); q6_traj = q_traj(6,:);
+q1_traj = q_traj(1,:); 
+q2_traj = q_traj(2,:); 
+q3_traj = q_traj(3,:);
+q4_traj = q_traj(4,:); 
+q5_traj = q_traj(5,:); 
+q6_traj = q_traj(6,:);
 
 assignin('base','q1', timetable(seconds(t'), q1_traj'));
 assignin('base','q2', timetable(seconds(t'), q2_traj'));
@@ -92,8 +96,12 @@ assignin('base','q4', timetable(seconds(t'), q4_traj'));
 assignin('base','q5', timetable(seconds(t'), q5_traj'));
 assignin('base','q6', timetable(seconds(t'), q6_traj'));
 
-q1d_traj = qd_traj(1,:); q2d_traj = qd_traj(2,:); q3d_traj = qd_traj(3,:);
-q4d_traj = qd_traj(4,:); q5d_traj = qd_traj(5,:); q6d_traj = qd_traj(6,:);
+q1d_traj = qd_traj(1,:);
+q2d_traj = qd_traj(2,:); 
+q3d_traj = qd_traj(3,:);
+q4d_traj = qd_traj(4,:); 
+q5d_traj = qd_traj(5,:); 
+q6d_traj = qd_traj(6,:);
 
 assignin('base','q1d', timetable(seconds(t'), q1d_traj'));
 assignin('base','q2d', timetable(seconds(t'), q2d_traj'));
@@ -102,8 +110,12 @@ assignin('base','q4d', timetable(seconds(t'), q4d_traj'));
 assignin('base','q5d', timetable(seconds(t'), q5d_traj'));
 assignin('base','q6d', timetable(seconds(t'), q6d_traj'));
 
-q1dd_traj = qdd_traj(1,:); q2dd_traj = qdd_traj(2,:); q3dd_traj = qdd_traj(3,:);
-q4dd_traj = qdd_traj(4,:); q5dd_traj = qdd_traj(5,:); q6dd_traj = qdd_traj(6,:);
+q1dd_traj = qdd_traj(1,:);
+q2dd_traj = qdd_traj(2,:); 
+q3dd_traj = qdd_traj(3,:);
+q4dd_traj = qdd_traj(4,:); 
+q5dd_traj = qdd_traj(5,:); 
+q6dd_traj = qdd_traj(6,:);
 
 assignin('base','q1dd', timetable(seconds(t'), q1dd_traj'));
 assignin('base','q2dd', timetable(seconds(t'), q2dd_traj'));
@@ -115,4 +127,4 @@ assignin('base','q6dd', timetable(seconds(t'), q6dd_traj'));
 Kp = 100*eye(6);
 Kd = 20*eye(6);
 
-sim("Final_proje_sim.slx", 6.16);
+sim("Final_proje_sim.slx", 6.30);

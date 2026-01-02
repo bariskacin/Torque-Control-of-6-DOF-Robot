@@ -1,5 +1,5 @@
-tool_rpy_deg  = [180 0 0];
-tool_offset_m = [0 0 0.10];     
+UcIslevci_rad  = [180 0 0];
+UcIslevci_offset = [0 0 0.10];     
 
 tree = rigidBodyTree('DataFormat','column','MaxNumBodies',8);
 tree.Gravity = [0 0 -9.81];
@@ -44,15 +44,15 @@ for i = 1:6
     end
 end
 
-tool = rigidBody('tool');
+UcIslevci = rigidBody('tool');
 fixJ = rigidBodyJoint('fixTool','fixed');
 
-rpy = deg2rad(tool_rpy_deg);
-Rtool = eul2rotm([rpy(3) rpy(2) rpy(1)], 'ZYX');  
-Ttool = rotm2tform(Rtool) * trvec2tform(tool_offset_m);
+UcIslevci_derece = deg2rad(UcIslevci_rad);
+RUcIslevci = eul2rotm([UcIslevci_derece(3) UcIslevci_derece(2) UcIslevci_derece(1)], 'ZYX');  
+TUcIslevci = rotm2tform(RUcIslevci) * trvec2tform(UcIslevci_offset);
 
-setFixedTransform(fixJ, Ttool);
-tool.Joint = fixJ;
-addBody(tree, tool, 'body6');
+setFixedTransform(fixJ, TUcIslevci);
+UcIslevci.Joint = fixJ;
+addBody(tree, UcIslevci, 'body6');
 
 assignin('base','robot_model',tree);
